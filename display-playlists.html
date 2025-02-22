@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Playlists 🎶</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Your Spotify Playlists 🎵</h1>
+        <p>Here are your Spotify playlists. Pick one to migrate to YouTube Music!</p>
+
+        <button id="get-playlist-button" class="green-button" onclick="getPlaylists()">Get Playlists</button>
+
+        <div id="playlist-container">
+            <!-- Playlists will be dynamically added here -->
+            <div class="playlist" style="display: none;">
+                <img id="playlist-image" src="https://via.placeholder.com/150" alt="Playlist image">
+                <h3 id="playlist-name">Playlist 1</h3>
+            </div>
+            <!-- More playlists can be added dynamically as needed -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
