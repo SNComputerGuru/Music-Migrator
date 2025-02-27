@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Playlists 🎶</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/api.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div id="container" class="container">
         <h1>🎵 Your Spotify Playlists 🎵</h1>
-        <p>Here are your Spotify playlists. Pick one to migrate to YouTube Music!</p>
+        <p>Here are your Spotify playlists. 
+
+            <br>
+            ✨Click to select playlists and then click "Proceed"
+        </p>
 
         <button id="get-playlist-button" class="green-button" onclick="getPlaylists()">Get Playlists</button>
 
@@ -23,6 +28,9 @@
         </div>
     </div>
 
+    <button id="proceed-btn" onclick="proceedToYTMusicLogin()">Proceed</button>
+
     <script src="app.js"></script>
+    <script src="youtubeapi.js"></script>
 </body>
 </html>

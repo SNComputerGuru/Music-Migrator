@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 body {
-    background: linear-gradient(135deg, #1DB954, #191414);
+    background: linear-gradient(135deg, rgb(29, 185, 84), #191414);
     color: white;
     display: flex;
     justify-content: center;
@@ -25,6 +25,16 @@ body {
     width: 100%;
     animation: fadeIn 1s ease-in-out;
 }
+
+#container {
+    transition: box-shadow 300ms ease, transform 300ms ease; /* Ensures both box-shadow and transform transition smoothly */
+}
+
+#container:hover {
+    box-shadow: 2px 4px 8px rgb(113, 255, 163);
+    transition-duration: 300ms;
+}
+
 
 h1 {
     font-size: 2rem;
@@ -137,4 +147,40 @@ p {
     background: rgba(30, 215, 96, 0.3);
     border: 2px solid #1DB954;          
     transform: scale(1.05);
+}
+
+/*  */
+#proceed-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #1DB954;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#proceed-btn:hover {
+    background-color: #17a74b;
+    transform: scale(1.05);
+}
+#proceed-btn:active {
+    transform: scale(0.95);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

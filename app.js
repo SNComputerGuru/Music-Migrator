@@ -59,7 +59,6 @@ function getPlaylists() {
     })
     .then(response => response.json())
     .then(data => {
-        console.log(data.items[0]);
         try {
             for (let i = 0; i < data.items.length; i++) {
                 displayPlaylist(data.items[i]);
@@ -112,4 +111,9 @@ function onPlaylistClick(element, playlistUrl) {
     }
 
     console.log(playlistArray);
+}
+
+
+function proceedToYTMusicLogin(){
+
 }
